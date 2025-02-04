@@ -693,7 +693,8 @@ class Element:
 
     async def clear_input(self, _until_event: type = None):
         """clears an input field"""
-        return await self.apply('function (element) { element.value = "" } ')
+        await self.apply('function (element) { element.select() } ')
+        return await self.tab.send(cdp.input_.insert_text(''))
 
     async def send_keys(self, text: str):
         """
