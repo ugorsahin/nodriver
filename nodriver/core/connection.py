@@ -409,8 +409,9 @@ class Connection(metaclass=CantTouchThis):
             if browser.config:
                 if browser.config.expert:
                     await self._prepare_expert()
-                if browser.config.headless:
+                if browser.config.headless and browser.ready:
                     await self._prepare_headless()
+
         if not self.listener or not self.listener.running:
             self.listener = Listener(self)
         try:
