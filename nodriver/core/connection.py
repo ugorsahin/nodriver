@@ -410,7 +410,7 @@ class Connection(metaclass=CantTouchThis):
             if browser.config:
                 if browser.config.expert:
                     await self._prepare_expert()
-                if browser.config.headless and browser.ready:
+                if browser.config.headless and self.target:
                     await self._prepare_headless()
 
         if not self.listener or not self.listener.running:

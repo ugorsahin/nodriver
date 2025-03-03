@@ -117,7 +117,6 @@ class Browser:
         self._keep_user_data_dir = None
         self._is_updating = asyncio.Event()
         self.connection: Connection = None
-        self.ready = False
         logger.debug("Session object initialized: %s" % vars(self))
 
     @property
@@ -393,7 +392,6 @@ class Browser:
             ]
             await self.connection.send(cdp.target.set_discover_targets(discover=True))
         await self
-        self.ready = True
         # self.connection.handlers[cdp.inspector.Detached] = [self.stop]
         # return self
 
