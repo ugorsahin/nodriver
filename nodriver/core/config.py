@@ -123,6 +123,7 @@ class Config:
             "--disable-dev-shm-usage",
             "--disable-session-crashed-bubble",
             "--disable-search-engine-choice-screen",
+            "--disable-features=IsolateOrigins,site-per-process,HeadlessExperimental,NetworkService"
         ]
 
     @property
