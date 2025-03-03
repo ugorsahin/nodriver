@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
 
-    <!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>NODRIVER - nodriver documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
@@ -309,6 +309,14 @@ to a nodriver.Browser instance and contintue from there</p></li>
 </section>
 <section id="what-is-new">
 <h3>what is new<a class="headerlink" href="#what-is-new" title="Link to this heading">#</a></h3>
+<p><strong>tab.cf_verify()</strong></p>
+<p>finds the checkbox and click it successfully
+this only works when NOT in expert mode.
+currently built-in english only
+requires opencv-python package to be installed</p>
+<div  class="sphinx-contrib-video-container align-left"><video autoplay="True" controls="True" muted="True" preload="auto" width="500" playsinline="True"><source src="_images/cf_verify_.mp4" type="video/mp4"></video></div><p><strong>tab.bypass_insecure_connection_warning()</strong></p>
+<p>convenience method, for insecure page warning.
+for example when a certificate is invalid.</p>
 <p><strong>tab.open_external_debugger()</strong></p>
 <p>lets you inspect the tab without breaking your connection</p>
 <p><strong>tab.get_local_storage()</strong></p>

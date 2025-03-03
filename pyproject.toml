@@ -1,7 +1,8 @@
 [project]
 
 name = "nodriver" # Required
-version = "0.39"  # Required
+
+version = "0.40"  # Required
 
 description = """
 
@@ -95,4 +96,5 @@ dev = [
     "sphinx_autodoc_typehints",
     "furo",
     "pygments",
+    "sphinxcontrib-video"
 ]

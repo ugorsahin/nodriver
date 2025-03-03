@@ -44,6 +44,20 @@ to fully customizable everything using the entire array of
 
 ### what is new
 
+**tab.cf_verify()**
+
+finds the checkbox and click it successfully
+this only works when NOT in expert mode.
+currently built-in english only
+requires opencv-python package to be installed
+
+[<video src="./docs/cf_verify_.mp4" width="700" autoplay playsInline controls></video>](https://github.com/user-attachments/assets/6406a561-3f27-4b30-8516-7c790ee3d5fe)
+
+**tab.bypass_insecure_connection_warning()**
+
+convenience method, for insecure page warning.
+for example when a certificate is invalid.
+
 **tab.open_external_debugger()**
 
 lets you inspect the tab without breaking your connection
